@@ -1,0 +1,3 @@
+/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/sandboxapp.dir
+/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/edit_cache.dir
+/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/rebuild_cache.dir

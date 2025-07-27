@@ -1,0 +1,31 @@
+{
+    "files.associations": {
+        "application.h": "c",
+        "entrypoint.h": "c",
+        "pspkernel.h": "c",
+        "ratio": "c",
+        "logger.h": "c",
+        "stdio.h": "c",
+        "unistd.h": "c",
+        "pspkdebug.h": "c",
+        "callbacks.h": "c",
+        "string.h": "c",
+        "pspdisplay.h": "c",
+        "pspgu.h": "c",
+        "stdlib.h": "c",
+        "pspgum.h": "c",
+        "math.h": "c",
+        "*.in": "cpp",
+        "graphics.h": "c",
+        "pspctrl.h": "c",
+        "pspfpu.h": "c",
+        "pspdebug.h": "c",
+        "psputility.h": "c",
+        "pspaudio.h": "c",
+        "pspmp3.h": "c",
+        "format": "c"
+    },
+    "files.exclude": {
+        "**/.*": true
+    }
+}

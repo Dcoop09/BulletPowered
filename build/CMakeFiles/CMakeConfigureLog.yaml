@@ -1,0 +1,654 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The target system is: Generic - 1 - mips
+      The host system is: Linux - 6.8.0-58-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/cooper/pspdev/bin/psp-gcc 
+      Build flags: -I/home/cooper/pspdev/psp/include;-I/home/cooper/pspdev/psp/sdk/include;-DPSP
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/cooper/pspdev/bin/psp-g++ 
+      Build flags: -I/home/cooper/pspdev/psp/include;-I/home/cooper/pspdev/psp/sdk/include;-DPSP
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/CMakeScratch/TryCompile-Buqs62"
+      binary: "/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/CMakeScratch/TryCompile-Buqs62"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-I/home/cooper/pspdev/psp/include -I/home/cooper/pspdev/psp/sdk/include -DPSP"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/cooper/pspdev/lib -L/home/cooper/pspdev/psp/lib -L/home/cooper/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/CMakeScratch/TryCompile-Buqs62'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_110ef/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_110ef.dir/build.make CMakeFiles/cmTC_110ef.dir/build
+        gmake[1]: Entering directory '/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/CMakeScratch/TryCompile-Buqs62'
+        Building C object CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj
+        /home/cooper/pspdev/bin/psp-gcc -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/home/cooper/pspdev/psp/include -I/home/cooper/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/home/cooper/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_110ef.dir/'
+         /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1 -quiet -v -I /home/cooper/pspdev/psp/include -I /home/cooper/pspdev/psp/sdk/include -iprefix /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /home/cooper/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_110ef.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mhard-float -msingle-float -version -o /tmp/ccOzIFtS.s
+        GNU C17 (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"
+        ignoring nonexistent directory "/home/cooper/pspdev/bin/../psp/usr/local/include"
+        ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"
+        ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"
+        ignoring duplicate directory "/home/cooper/pspdev/bin/../psp/include"
+        ignoring duplicate directory "/home/cooper/pspdev/psp/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/cooper/pspdev/psp/sdk/include
+         /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include
+         /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed
+         /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include
+        End of search list.
+        Compiler executable checksum: 7d8445c991800b8218f92c5057ea2e0f
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_110ef.dir/'
+         /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj /tmp/ccOzIFtS.s
+        COMPILER_PATH=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/cooper/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_110ef
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_110ef.dir/link.txt --verbose=1
+        /home/cooper/pspdev/bin/psp-gcc -I/home/cooper/pspdev/psp/include -I/home/cooper/pspdev/psp/sdk/include -DPSP  -L/home/cooper/pspdev/lib -L/home/cooper/pspdev/psp/lib -L/home/cooper/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128 -v CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj -o cmTC_110ef   -L/home/cooper/pspdev/lib  -L/home/cooper/pspdev/psp/lib  -L/home/cooper/pspdev/psp/sdk/lib 
+        Using built-in specs.
+        COLLECT_GCC=/home/cooper/pspdev/bin/psp-gcc
+        COLLECT_LTO_WRAPPER=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COMPILER_PATH=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/cooper/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_110ef' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_110ef.'
+         /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cckXRduA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/home/cooper/pspdev/bin/../psp -EL -o cmTC_110ef /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/home/cooper/pspdev/lib -L/home/cooper/pspdev/psp/lib -L/home/cooper/pspdev/psp/sdk/lib -L/home/cooper/pspdev/lib -L/home/cooper/pspdev/psp/lib -L/home/cooper/pspdev/psp/sdk/lib -L/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0 -L/home/cooper/pspdev/bin/../lib/gcc -L/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/home/cooper/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o
+        /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/tmp/cckXRduA.res -flinker-output=exec /home/cooper/pspdev/psp/lib/libpthread.a@0x60c82 /home/cooper/pspdev/psp/lib/libpthread.a@0x62cf6 /home/cooper/pspdev/psp/lib/libpthread.a@0x64fde /home/cooper/pspdev/psp/lib/libpthread.a@0x66ab6 /home/cooper/pspdev/psp/lib/libpthread.a@0x1aae /home/cooper/pspdev/psp/lib/libpthread.a@0x50ea /home/cooper/pspdev/psp/lib/libpthread.a@0x717e /home/cooper/pspdev/psp/lib/libpthread.a@0xb6de /home/cooper/pspdev/psp/lib/libpthread.a@0x1a3ce /home/cooper/pspdev/psp/lib/libpthread.a@0x1c27a /home/cooper/pspdev/psp/lib/libpthread.a@0x270ca /home/cooper/pspdev/psp/lib/libpthread.a@0x549ce /home/cooper/pspdev/psp/lib/libpthread.a@0x5947e /home/cooper/pspdev/psp/lib/libpthread.a@0x5cf6e /home/cooper/pspdev/psp/lib/libpthread.a@0x5eac2 /home/cooper/pspdev/psp/lib/libpthread.a@0x68dc2 /home/cooper/pspdev/psp/lib/libpthread.a@0x6a2f2 /home/cooper/pspdev/psp/lib/libpthread.a@0x6c876 /home/cooper/pspdev/psp/lib/libpthread.a@0x365a 
+        /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/tmp/cckXRduA.res -flinker-output=exec /home/cooper/pspdev/psp/lib/libpthread.a@0x60c82 /home/cooper/pspdev/psp/lib/libpthread.a@0x62cf6 /home/cooper/pspdev/psp/lib/libpthread.a@0x64fde /home/cooper/pspdev/psp/lib/libpthread.a@0x66ab6 /home/cooper/pspdev/psp/lib/libpthread.a@0x1aae /home/cooper/pspdev/psp/lib/libpthread.a@0x50ea /home/cooper/pspdev/psp/lib/libpthread.a@0x717e /home/cooper/pspdev/psp/lib/libpthread.a@0xb6de /home/cooper/pspdev/psp/lib/libpthread.a@0x1a3ce /home/cooper/pspdev/psp/lib/libpthread.a@0x1c27a /home/cooper/pspdev/psp/lib/libpthread.a@0x270ca /home/cooper/pspdev/psp/lib/libpthread.a@0x549ce /home/cooper/pspdev/psp/lib/libpthread.a@0x5947e /home/cooper/pspdev/psp/lib/libpthread.a@0x5cf6e /home/cooper/pspdev/psp/lib/libpthread.a@0x5eac2 /home/cooper/pspdev/psp/lib/libpthread.a@0x68dc2 /home/cooper/pspdev/psp/lib/libpthread.a@0x6a2f2 /home/cooper/pspdev/psp/lib/libpthread.a@0x6c876 /home/cooper/pspdev/psp/lib/libpthread.a@0x365a 
+        /home/cooper/pspdev/bin/psp-gcc @/tmp/ccUgJQJY
+        Using built-in specs.
+        COLLECT_GCC=/home/cooper/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccd325n3.ltrans.out' '-fwpa' '-fresolution=/tmp/cckXRduA.res' '-flinker-output=exec'
+         /home/cooper/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_110ef.wpa -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/tmp/ccd325n3.ltrans.out -fwpa -fresolution=/tmp/cckXRduA.res -flinker-output=exec @/tmp/ccFpq6aw
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/home/cooper/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/cooper/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccd325n3.ltrans.out' '-fwpa' '-fresolution=/tmp/cckXRduA.res' '-flinker-output=exec' '-dumpdir' './cmTC_110ef.wpa.'
+        /home/cooper/pspdev/bin/psp-gcc @/tmp/cclnDkjS
+        Using built-in specs.
+        COLLECT_GCC=/home/cooper/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccd325n3.ltrans0.ltrans.o'
+         /home/cooper/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_110ef.ltrans0.ltrans -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/tmp/ccY86tXX -o /tmp/ccmgyl9V.s
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccd325n3.ltrans0.ltrans.o'
+         /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /tmp/ccd325n3.ltrans0.ltrans.o /tmp/ccmgyl9V.s
+        COMPILER_PATH=/home/cooper/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/cooper/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccd325n3.ltrans0.ltrans.o' '-dumpdir' './cmTC_110ef.ltrans0.ltrans.'
+        COLLECT_GCC_OPTIONS='-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_110ef' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_110ef.'
+        gmake[1]: Leaving directory '/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/CMakeScratch/TryCompile-Buqs62'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/cooper/pspdev/psp/sdk/include]
+          add: [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+          add: [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+          add: [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        end of search list found
+        collapse include dir [/home/cooper/pspdev/psp/sdk/include] ==> [/home/cooper/pspdev/psp/sdk/include]
+        collapse include dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include] ==> [/home/cooper/pspdev/lib/gcc/psp/14.1.0/include]
+        collapse include dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed] ==> [/home/cooper/pspdev/lib/gcc/psp/14.1.0/include-fixed]
+        collapse include dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include] ==> [/home/cooper/pspdev/psp/include]
+        implicit include dirs: [/home/cooper/pspdev/psp/sdk/include;/home/cooper/pspdev/lib/gcc/psp/14.1.0/include;/home/cooper/pspdev/lib/gcc/psp/14.1.0/include-fixed;/home/cooper/pspdev/psp/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(psp-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/CMakeScratch/TryCompile-Buqs62']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_110ef/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_110ef.dir/build.make CMakeFiles/cmTC_110ef.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/CMakeScratch/TryCompile-Buqs62']
+        ignore line: [Building C object CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/home/cooper/pspdev/bin/psp-gcc -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/home/cooper/pspdev/psp/include -I/home/cooper/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/cooper/pspdev/bin/psp-gcc]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_110ef.dir/']
+        ignore line: [ /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1 -quiet -v -I /home/cooper/pspdev/psp/include -I /home/cooper/pspdev/psp/sdk/include -iprefix /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /home/cooper/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_110ef.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mhard-float -msingle-float -version -o /tmp/ccOzIFtS.s]
+        ignore line: [GNU C17 (GCC) version 14.1.0 (psp)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [warning: GMP header version 6.2.1 differs from library version 6.3.0.]
+        ignore line: [warning: MPFR header version 4.1.0 differs from library version 4.2.1.]
+        ignore line: [warning: MPC header version 1.2.1 differs from library version 1.3.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/cooper/pspdev/bin/../psp/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/cooper/pspdev/bin/../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/cooper/pspdev/psp/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/cooper/pspdev/psp/sdk/include]
+        ignore line: [ /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+        ignore line: [ /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+        ignore line: [ /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 7d8445c991800b8218f92c5057ea2e0f]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_110ef.dir/']
+        ignore line: [ /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj /tmp/ccOzIFtS.s]
+        ignore line: [COMPILER_PATH=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/cooper/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_110ef]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_110ef.dir/link.txt --verbose=1]
+        ignore line: [/home/cooper/pspdev/bin/psp-gcc -I/home/cooper/pspdev/psp/include -I/home/cooper/pspdev/psp/sdk/include -DPSP  -L/home/cooper/pspdev/lib -L/home/cooper/pspdev/psp/lib -L/home/cooper/pspdev/psp/sdk/lib -Wl -zmax-page-size=128 -v CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj -o cmTC_110ef   -L/home/cooper/pspdev/lib  -L/home/cooper/pspdev/psp/lib  -L/home/cooper/pspdev/psp/sdk/lib ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/cooper/pspdev/bin/psp-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/cooper/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_110ef' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_110ef.']
+        link line: [ /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cckXRduA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/home/cooper/pspdev/bin/../psp -EL -o cmTC_110ef /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/home/cooper/pspdev/lib -L/home/cooper/pspdev/psp/lib -L/home/cooper/pspdev/psp/sdk/lib -L/home/cooper/pspdev/lib -L/home/cooper/pspdev/psp/lib -L/home/cooper/pspdev/psp/sdk/lib -L/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0 -L/home/cooper/pspdev/bin/../lib/gcc -L/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/home/cooper/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+          arg [/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cckXRduA.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthreadglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lcglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsputility] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsprtc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_inet] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_resolver] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspsdk] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspmodinfo] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspuser] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspkernel] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/cooper/pspdev/bin/../psp] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_110ef] ==> ignore
+          arg [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o]
+          arg [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o]
+          arg [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o]
+          arg [-L/home/cooper/pspdev/lib] ==> dir [/home/cooper/pspdev/lib]
+          arg [-L/home/cooper/pspdev/psp/lib] ==> dir [/home/cooper/pspdev/psp/lib]
+          arg [-L/home/cooper/pspdev/psp/sdk/lib] ==> dir [/home/cooper/pspdev/psp/sdk/lib]
+          arg [-L/home/cooper/pspdev/lib] ==> dir [/home/cooper/pspdev/lib]
+          arg [-L/home/cooper/pspdev/psp/lib] ==> dir [/home/cooper/pspdev/psp/lib]
+          arg [-L/home/cooper/pspdev/psp/sdk/lib] ==> dir [/home/cooper/pspdev/psp/sdk/lib]
+          arg [-L/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0] ==> dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0]
+          arg [-L/home/cooper/pspdev/bin/../lib/gcc] ==> dir [/home/cooper/pspdev/bin/../lib/gcc]
+          arg [-L/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib]
+          arg [-L/home/cooper/pspdev/bin/../psp/lib] ==> dir [/home/cooper/pspdev/bin/../psp/lib]
+          arg [-zmax-page-size=128] ==> ignore
+          arg [CMakeFiles/cmTC_110ef.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lpthreadglue] ==> lib [pthreadglue]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lcglue] ==> lib [cglue]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [-lpsputility] ==> lib [psputility]
+          arg [-lpsprtc] ==> lib [psprtc]
+          arg [-lpspnet_inet] ==> lib [pspnet_inet]
+          arg [-lpspnet_resolver] ==> lib [pspnet_resolver]
+          arg [-lpspsdk] ==> lib [pspsdk]
+          arg [-lpspmodinfo] ==> lib [pspmodinfo]
+          arg [-lpspuser] ==> lib [pspuser]
+          arg [-lpspkernel] ==> lib [pspkernel]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o]
+          arg [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+        collapse obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> [/home/cooper/pspdev/psp/lib/crt0.o]
+        collapse obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> [/home/cooper/pspdev/lib/gcc/psp/14.1.0/crti.o]
+        collapse obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> [/home/cooper/pspdev/lib/gcc/psp/14.1.0/crtbegin.o]
+        collapse obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> [/home/cooper/pspdev/lib/gcc/psp/14.1.0/crtend.o]
+        collapse obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> [/home/cooper/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        collapse library dir [/home/cooper/pspdev/lib] ==> [/home/cooper/pspdev/lib]
+        collapse library dir [/home/cooper/pspdev/psp/lib] ==> [/home/cooper/pspdev/psp/lib]
+        collapse library dir [/home/cooper/pspdev/psp/sdk/lib] ==> [/home/cooper/pspdev/psp/sdk/lib]
+        collapse library dir [/home/cooper/pspdev/lib] ==> [/home/cooper/pspdev/lib]
+        collapse library dir [/home/cooper/pspdev/psp/lib] ==> [/home/cooper/pspdev/psp/lib]
+        collapse library dir [/home/cooper/pspdev/psp/sdk/lib] ==> [/home/cooper/pspdev/psp/sdk/lib]
+        collapse library dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0] ==> [/home/cooper/pspdev/lib/gcc/psp/14.1.0]
+        collapse library dir [/home/cooper/pspdev/bin/../lib/gcc] ==> [/home/cooper/pspdev/lib/gcc]
+        collapse library dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> [/home/cooper/pspdev/psp/lib]
+        collapse library dir [/home/cooper/pspdev/bin/../psp/lib] ==> [/home/cooper/pspdev/psp/lib]
+        implicit libs: [gcc;m;pthreadglue;pthread;cglue;c;psputility;psprtc;pspnet_inet;pspnet_resolver;pspsdk;pspmodinfo;pspuser;pspkernel;gcc]
+        implicit objs: [/home/cooper/pspdev/psp/lib/crt0.o;/home/cooper/pspdev/lib/gcc/psp/14.1.0/crti.o;/home/cooper/pspdev/lib/gcc/psp/14.1.0/crtbegin.o;/home/cooper/pspdev/lib/gcc/psp/14.1.0/crtend.o;/home/cooper/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        implicit dirs: [/home/cooper/pspdev/lib;/home/cooper/pspdev/psp/lib;/home/cooper/pspdev/psp/sdk/lib;/home/cooper/pspdev/lib/gcc/psp/14.1.0;/home/cooper/pspdev/lib/gcc]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/CMakeScratch/TryCompile-UMCxTe"
+      binary: "/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/CMakeScratch/TryCompile-UMCxTe"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/cooper/pspdev/psp/include -I/home/cooper/pspdev/psp/sdk/include -DPSP"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/cooper/pspdev/lib -L/home/cooper/pspdev/psp/lib -L/home/cooper/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/CMakeScratch/TryCompile-UMCxTe'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_44bbd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_44bbd.dir/build.make CMakeFiles/cmTC_44bbd.dir/build
+        gmake[1]: Entering directory '/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/CMakeScratch/TryCompile-UMCxTe'
+        Building CXX object CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj
+        /home/cooper/pspdev/bin/psp-g++ -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/home/cooper/pspdev/psp/include -I/home/cooper/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/home/cooper/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_44bbd.dir/'
+         /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1plus -quiet -v -I /home/cooper/pspdev/psp/include -I /home/cooper/pspdev/psp/sdk/include -iprefix /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /home/cooper/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_44bbd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mhard-float -msingle-float -version -o /tmp/ccLlLl2D.s
+        GNU C++17 (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0"
+        ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp"
+        ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward"
+        ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"
+        ignoring nonexistent directory "/home/cooper/pspdev/bin/../psp/usr/local/include"
+        ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"
+        ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"
+        ignoring duplicate directory "/home/cooper/pspdev/bin/../psp/include"
+        ignoring duplicate directory "/home/cooper/pspdev/psp/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/cooper/pspdev/psp/sdk/include
+         /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0
+         /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp
+         /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward
+         /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include
+         /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed
+         /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include
+        End of search list.
+        Compiler executable checksum: 41e33de7074bf35a938cd110824846ea
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_44bbd.dir/'
+         /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccLlLl2D.s
+        COMPILER_PATH=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/cooper/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_44bbd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44bbd.dir/link.txt --verbose=1
+        /home/cooper/pspdev/bin/psp-g++ -I/home/cooper/pspdev/psp/include -I/home/cooper/pspdev/psp/sdk/include -DPSP  -L/home/cooper/pspdev/lib -L/home/cooper/pspdev/psp/lib -L/home/cooper/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128 -v CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_44bbd   -L/home/cooper/pspdev/lib  -L/home/cooper/pspdev/psp/lib  -L/home/cooper/pspdev/psp/sdk/lib 
+        Using built-in specs.
+        COLLECT_GCC=/home/cooper/pspdev/bin/psp-g++
+        COLLECT_LTO_WRAPPER=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COMPILER_PATH=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/cooper/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_44bbd' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_44bbd.'
+         /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3ZS3p4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/home/cooper/pspdev/bin/../psp -EL -o cmTC_44bbd /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/home/cooper/pspdev/lib -L/home/cooper/pspdev/psp/lib -L/home/cooper/pspdev/psp/sdk/lib -L/home/cooper/pspdev/lib -L/home/cooper/pspdev/psp/lib -L/home/cooper/pspdev/psp/sdk/lib -L/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0 -L/home/cooper/pspdev/bin/../lib/gcc -L/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/home/cooper/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o
+        /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/tmp/cc3ZS3p4.res -flinker-output=exec /home/cooper/pspdev/psp/lib/libpthread.a@0x60c82 /home/cooper/pspdev/psp/lib/libpthread.a@0x62cf6 /home/cooper/pspdev/psp/lib/libpthread.a@0x64fde /home/cooper/pspdev/psp/lib/libpthread.a@0x66ab6 /home/cooper/pspdev/psp/lib/libpthread.a@0x1aae /home/cooper/pspdev/psp/lib/libpthread.a@0x50ea /home/cooper/pspdev/psp/lib/libpthread.a@0x717e /home/cooper/pspdev/psp/lib/libpthread.a@0xb6de /home/cooper/pspdev/psp/lib/libpthread.a@0x1a3ce /home/cooper/pspdev/psp/lib/libpthread.a@0x1c27a /home/cooper/pspdev/psp/lib/libpthread.a@0x270ca /home/cooper/pspdev/psp/lib/libpthread.a@0x549ce /home/cooper/pspdev/psp/lib/libpthread.a@0x5947e /home/cooper/pspdev/psp/lib/libpthread.a@0x5cf6e /home/cooper/pspdev/psp/lib/libpthread.a@0x5eac2 /home/cooper/pspdev/psp/lib/libpthread.a@0x68dc2 /home/cooper/pspdev/psp/lib/libpthread.a@0x6a2f2 /home/cooper/pspdev/psp/lib/libpthread.a@0x6c876 /home/cooper/pspdev/psp/lib/libpthread.a@0x365a 
+        /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/tmp/cc3ZS3p4.res -flinker-output=exec /home/cooper/pspdev/psp/lib/libpthread.a@0x60c82 /home/cooper/pspdev/psp/lib/libpthread.a@0x62cf6 /home/cooper/pspdev/psp/lib/libpthread.a@0x64fde /home/cooper/pspdev/psp/lib/libpthread.a@0x66ab6 /home/cooper/pspdev/psp/lib/libpthread.a@0x1aae /home/cooper/pspdev/psp/lib/libpthread.a@0x50ea /home/cooper/pspdev/psp/lib/libpthread.a@0x717e /home/cooper/pspdev/psp/lib/libpthread.a@0xb6de /home/cooper/pspdev/psp/lib/libpthread.a@0x1a3ce /home/cooper/pspdev/psp/lib/libpthread.a@0x1c27a /home/cooper/pspdev/psp/lib/libpthread.a@0x270ca /home/cooper/pspdev/psp/lib/libpthread.a@0x549ce /home/cooper/pspdev/psp/lib/libpthread.a@0x5947e /home/cooper/pspdev/psp/lib/libpthread.a@0x5cf6e /home/cooper/pspdev/psp/lib/libpthread.a@0x5eac2 /home/cooper/pspdev/psp/lib/libpthread.a@0x68dc2 /home/cooper/pspdev/psp/lib/libpthread.a@0x6a2f2 /home/cooper/pspdev/psp/lib/libpthread.a@0x6c876 /home/cooper/pspdev/psp/lib/libpthread.a@0x365a 
+        /home/cooper/pspdev/bin/psp-g++ @/tmp/ccJDmwii
+        Using built-in specs.
+        COLLECT_GCC=/home/cooper/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccczUbN2.ltrans.out' '-fwpa' '-fresolution=/tmp/cc3ZS3p4.res' '-flinker-output=exec'
+         /home/cooper/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_44bbd.wpa -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/tmp/ccczUbN2.ltrans.out -fwpa -fresolution=/tmp/cc3ZS3p4.res -flinker-output=exec @/tmp/cceYzn6y
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/home/cooper/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/cooper/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccczUbN2.ltrans.out' '-fwpa' '-fresolution=/tmp/cc3ZS3p4.res' '-flinker-output=exec' '-dumpdir' './cmTC_44bbd.wpa.'
+        /home/cooper/pspdev/bin/psp-g++ @/tmp/ccbLoXOS
+        Using built-in specs.
+        COLLECT_GCC=/home/cooper/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccczUbN2.ltrans0.ltrans.o'
+         /home/cooper/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_44bbd.ltrans0.ltrans -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/tmp/ccsFBKH5 -o /tmp/ccEpByM9.s
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccczUbN2.ltrans0.ltrans.o'
+         /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /tmp/ccczUbN2.ltrans0.ltrans.o /tmp/ccEpByM9.s
+        COMPILER_PATH=/home/cooper/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/cooper/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccczUbN2.ltrans0.ltrans.o' '-dumpdir' './cmTC_44bbd.ltrans0.ltrans.'
+        COLLECT_GCC_OPTIONS='-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_44bbd' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_44bbd.'
+        gmake[1]: Leaving directory '/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/CMakeScratch/TryCompile-UMCxTe'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/cooper/pspdev/psp/sdk/include]
+          add: [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0]
+          add: [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp]
+          add: [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward]
+          add: [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+          add: [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+          add: [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        end of search list found
+        collapse include dir [/home/cooper/pspdev/psp/sdk/include] ==> [/home/cooper/pspdev/psp/sdk/include]
+        collapse include dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0] ==> [/home/cooper/pspdev/psp/include/c++/14.1.0]
+        collapse include dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp] ==> [/home/cooper/pspdev/psp/include/c++/14.1.0/psp]
+        collapse include dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward] ==> [/home/cooper/pspdev/psp/include/c++/14.1.0/backward]
+        collapse include dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include] ==> [/home/cooper/pspdev/lib/gcc/psp/14.1.0/include]
+        collapse include dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed] ==> [/home/cooper/pspdev/lib/gcc/psp/14.1.0/include-fixed]
+        collapse include dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include] ==> [/home/cooper/pspdev/psp/include]
+        implicit include dirs: [/home/cooper/pspdev/psp/sdk/include;/home/cooper/pspdev/psp/include/c++/14.1.0;/home/cooper/pspdev/psp/include/c++/14.1.0/psp;/home/cooper/pspdev/psp/include/c++/14.1.0/backward;/home/cooper/pspdev/lib/gcc/psp/14.1.0/include;/home/cooper/pspdev/lib/gcc/psp/14.1.0/include-fixed;/home/cooper/pspdev/psp/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(psp-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/CMakeScratch/TryCompile-UMCxTe']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_44bbd/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_44bbd.dir/build.make CMakeFiles/cmTC_44bbd.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/cooper/PSP Homebrewing/BulletPowered/build/CMakeFiles/CMakeScratch/TryCompile-UMCxTe']
+        ignore line: [Building CXX object CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/home/cooper/pspdev/bin/psp-g++ -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/home/cooper/pspdev/psp/include -I/home/cooper/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/cooper/pspdev/bin/psp-g++]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_44bbd.dir/']
+        ignore line: [ /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1plus -quiet -v -I /home/cooper/pspdev/psp/include -I /home/cooper/pspdev/psp/sdk/include -iprefix /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /home/cooper/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_44bbd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mhard-float -msingle-float -version -o /tmp/ccLlLl2D.s]
+        ignore line: [GNU C++17 (GCC) version 14.1.0 (psp)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [warning: GMP header version 6.2.1 differs from library version 6.3.0.]
+        ignore line: [warning: MPFR header version 4.1.0 differs from library version 4.2.1.]
+        ignore line: [warning: MPC header version 1.2.1 differs from library version 1.3.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0"]
+        ignore line: [ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp"]
+        ignore line: [ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward"]
+        ignore line: [ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/cooper/pspdev/bin/../psp/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/cooper/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/cooper/pspdev/bin/../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/cooper/pspdev/psp/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/cooper/pspdev/psp/sdk/include]
+        ignore line: [ /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0]
+        ignore line: [ /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp]
+        ignore line: [ /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward]
+        ignore line: [ /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+        ignore line: [ /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+        ignore line: [ /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 41e33de7074bf35a938cd110824846ea]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_44bbd.dir/']
+        ignore line: [ /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccLlLl2D.s]
+        ignore line: [COMPILER_PATH=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/cooper/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_44bbd]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44bbd.dir/link.txt --verbose=1]
+        ignore line: [/home/cooper/pspdev/bin/psp-g++ -I/home/cooper/pspdev/psp/include -I/home/cooper/pspdev/psp/sdk/include -DPSP  -L/home/cooper/pspdev/lib -L/home/cooper/pspdev/psp/lib -L/home/cooper/pspdev/psp/sdk/lib -Wl -zmax-page-size=128 -v CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_44bbd   -L/home/cooper/pspdev/lib  -L/home/cooper/pspdev/psp/lib  -L/home/cooper/pspdev/psp/sdk/lib ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/cooper/pspdev/bin/psp-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../libexec/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/cooper/pspdev/bin/../lib/gcc/:/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/cooper/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/cooper/pspdev/psp/include' '-I' '/home/cooper/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_44bbd' '-L/home/cooper/pspdev/lib' '-L/home/cooper/pspdev/psp/lib' '-L/home/cooper/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_44bbd.']
+        link line: [ /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3ZS3p4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/home/cooper/pspdev/bin/../psp -EL -o cmTC_44bbd /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/home/cooper/pspdev/lib -L/home/cooper/pspdev/psp/lib -L/home/cooper/pspdev/psp/sdk/lib -L/home/cooper/pspdev/lib -L/home/cooper/pspdev/psp/lib -L/home/cooper/pspdev/psp/sdk/lib -L/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0 -L/home/cooper/pspdev/bin/../lib/gcc -L/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/home/cooper/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+          arg [/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/cooper/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc3ZS3p4.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthreadglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lcglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsputility] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsprtc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_inet] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_resolver] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspsdk] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspmodinfo] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspuser] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspkernel] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/cooper/pspdev/bin/../psp] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_44bbd] ==> ignore
+          arg [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o]
+          arg [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o]
+          arg [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o]
+          arg [-L/home/cooper/pspdev/lib] ==> dir [/home/cooper/pspdev/lib]
+          arg [-L/home/cooper/pspdev/psp/lib] ==> dir [/home/cooper/pspdev/psp/lib]
+          arg [-L/home/cooper/pspdev/psp/sdk/lib] ==> dir [/home/cooper/pspdev/psp/sdk/lib]
+          arg [-L/home/cooper/pspdev/lib] ==> dir [/home/cooper/pspdev/lib]
+          arg [-L/home/cooper/pspdev/psp/lib] ==> dir [/home/cooper/pspdev/psp/lib]
+          arg [-L/home/cooper/pspdev/psp/sdk/lib] ==> dir [/home/cooper/pspdev/psp/sdk/lib]
+          arg [-L/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0] ==> dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0]
+          arg [-L/home/cooper/pspdev/bin/../lib/gcc] ==> dir [/home/cooper/pspdev/bin/../lib/gcc]
+          arg [-L/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib]
+          arg [-L/home/cooper/pspdev/bin/../psp/lib] ==> dir [/home/cooper/pspdev/bin/../psp/lib]
+          arg [-zmax-page-size=128] ==> ignore
+          arg [CMakeFiles/cmTC_44bbd.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lpthreadglue] ==> lib [pthreadglue]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lcglue] ==> lib [cglue]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [-lpsputility] ==> lib [psputility]
+          arg [-lpsprtc] ==> lib [psprtc]
+          arg [-lpspnet_inet] ==> lib [pspnet_inet]
+          arg [-lpspnet_resolver] ==> lib [pspnet_resolver]
+          arg [-lpspsdk] ==> lib [pspsdk]
+          arg [-lpspmodinfo] ==> lib [pspmodinfo]
+          arg [-lpspuser] ==> lib [pspuser]
+          arg [-lpspkernel] ==> lib [pspkernel]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o]
+          arg [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+        collapse obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> [/home/cooper/pspdev/psp/lib/crt0.o]
+        collapse obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> [/home/cooper/pspdev/lib/gcc/psp/14.1.0/crti.o]
+        collapse obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> [/home/cooper/pspdev/lib/gcc/psp/14.1.0/crtbegin.o]
+        collapse obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> [/home/cooper/pspdev/lib/gcc/psp/14.1.0/crtend.o]
+        collapse obj [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> [/home/cooper/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        collapse library dir [/home/cooper/pspdev/lib] ==> [/home/cooper/pspdev/lib]
+        collapse library dir [/home/cooper/pspdev/psp/lib] ==> [/home/cooper/pspdev/psp/lib]
+        collapse library dir [/home/cooper/pspdev/psp/sdk/lib] ==> [/home/cooper/pspdev/psp/sdk/lib]
+        collapse library dir [/home/cooper/pspdev/lib] ==> [/home/cooper/pspdev/lib]
+        collapse library dir [/home/cooper/pspdev/psp/lib] ==> [/home/cooper/pspdev/psp/lib]
+        collapse library dir [/home/cooper/pspdev/psp/sdk/lib] ==> [/home/cooper/pspdev/psp/sdk/lib]
+        collapse library dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0] ==> [/home/cooper/pspdev/lib/gcc/psp/14.1.0]
+        collapse library dir [/home/cooper/pspdev/bin/../lib/gcc] ==> [/home/cooper/pspdev/lib/gcc]
+        collapse library dir [/home/cooper/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> [/home/cooper/pspdev/psp/lib]
+        collapse library dir [/home/cooper/pspdev/bin/../psp/lib] ==> [/home/cooper/pspdev/psp/lib]
+        implicit libs: [stdc++;m;gcc;m;pthreadglue;pthread;cglue;c;psputility;psprtc;pspnet_inet;pspnet_resolver;pspsdk;pspmodinfo;pspuser;pspkernel;gcc]
+        implicit objs: [/home/cooper/pspdev/psp/lib/crt0.o;/home/cooper/pspdev/lib/gcc/psp/14.1.0/crti.o;/home/cooper/pspdev/lib/gcc/psp/14.1.0/crtbegin.o;/home/cooper/pspdev/lib/gcc/psp/14.1.0/crtend.o;/home/cooper/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        implicit dirs: [/home/cooper/pspdev/lib;/home/cooper/pspdev/psp/lib;/home/cooper/pspdev/psp/sdk/lib;/home/cooper/pspdev/lib/gcc/psp/14.1.0;/home/cooper/pspdev/lib/gcc]
+        implicit fwks: []
+      
+      
+...
