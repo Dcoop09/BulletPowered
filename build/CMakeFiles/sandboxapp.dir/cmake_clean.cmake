@@ -21,9 +21,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/sandboxapp.dir/sandbox/src/rainbow_plane.c.obj.d"
   "CMakeFiles/sandboxapp.dir/sandbox/src/sandboxapp.c.obj"
   "CMakeFiles/sandboxapp.dir/sandbox/src/sandboxapp.c.obj.d"
-  "alpha.o"
-  "colors.o"
-  "font.o"
   "sandboxapp"
   "sandboxapp.pdb"
 )

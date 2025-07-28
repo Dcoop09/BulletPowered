@@ -6,5 +6,5 @@ C_DEFINES = -DPSP -D_PSP_FW_VERSION=600 -D__PSP__
 
 C_INCLUDES = -I"/home/cooper/PSP Homebrewing/BulletPowered/Bpow/src/include" -I"/home/cooper/PSP Homebrewing/BulletPowered/OUTPUT_VARIABLE/lib/build.mak"
 
-C_FLAGS = -I/home/cooper/pspdev/psp/include -I/home/cooper/pspdev/psp/sdk/include -DPSP -g
+C_FLAGS = -I/home/cooper/pspdev/psp/include -I/home/cooper/pspdev/psp/sdk/include -DPSP
 

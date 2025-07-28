@@ -1,4 +1,0 @@
-# Hashes of file build rules.
-ae5d05b0ea04f549e3bf3b76d18a6d81 alpha.o
-0284c1bf61dcc812645aa553cf184318 colors.o
-c422db5ef2b511aad6bead17a342e157 font.o

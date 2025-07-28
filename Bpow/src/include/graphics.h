@@ -43,7 +43,7 @@ void startframe(Camera3D cam);
 void endframe();
 
 //load texture into ram for next meshes (needs swizzle)
-void loadTexture(void* texture, int textureX, int textureY, char vram, char sharp);
+void loadTexture(void* textureName, int textureX, int textureY, char vram, char sharp);
 
 //positions and renders vertices
 void renderMesh(ScePspFVector3 pos, ScePspFVector3 rot, ScePspFVector3 scale, int verticeCount, void* vertices);
@@ -55,7 +55,7 @@ void renderSprite(ScePspFVector3 pos, float rot, ScePspFVector3 scale, int verti
 void renderUI(ScePspFVector3 pos, float rot, ScePspFVector3 scale, int verticeCount, void* vertices);
 
 //loads font to use (texture, the width of texture, the height of the texture, character columns, character rows)
-Tilemap* loadFont(void* texture, int texSizeX, int texSizeY, int sizeX, int sizeY);
+Tilemap* loadFont(char* textureName, int texSizeX, int texSizeY, int sizeX, int sizeY);
 
 //draws a string using a tilemap
 void drawText(Tilemap* t, ScePspFVector3 pos, float rot, float scale, const unsigned char* str);

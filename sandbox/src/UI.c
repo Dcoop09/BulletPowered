@@ -23,7 +23,7 @@ static void render()
 {
 	if(font == NULL)
 	{
-		font = loadFont(font_start, 128, 128, 16, 16);
+		font = loadFont("font.data", 128, 128, 16, 16);
 	}
 	
 	ScePspFVector3 gridpos = {-100.0f, 70.0f, -100.0f};

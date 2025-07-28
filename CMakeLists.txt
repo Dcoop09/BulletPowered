@@ -18,34 +18,10 @@ set(SOURCE_PATH sandbox/src)
 
 set(ASSETS_PATH sandbox/assets)
 
-set(TEXTURE_PATH ${ASSETS_PATH}/textures)
-set(TEXTURE_FILES
-    ${TEXTURE_PATH}/alpha.data
-    ${TEXTURE_PATH}/font.data
-    ${TEXTURE_PATH}/colors.data
-)
-
-set(OBJECT_FILES "")
-
 include_directories(${INC_PATH})
 include_directories(${PSPSDK}/lib/build.mak)
 
 file(COPY "${ASSETS_PATH}" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
-
-foreach(TEX_FILE IN LISTS TEXTURE_FILES)
-    get_filename_component(BASENAME ${TEX_FILE} NAME_WE)
-    set(OBJ_FILE ${CMAKE_CURRENT_BINARY_DIR}/${BASENAME}.o)
-    get_filename_component(OBJ_TITLE ${OBJ_FILE} NAME_WE)
-
-    add_custom_command(
-        OUTPUT ${OBJ_FILE}
-        COMMAND bin2o -i ../${TEX_FILE} ${OBJ_FILE} ${OBJ_TITLE}
-        DEPENDS ${TEX_FILE}
-        COMMENT "Generating ${OBJ_FILE} from ${TEX_FILE}"
-    )
-
-    list(APPEND OBJECT_FILES ${OBJ_FILE})
-endforeach()
 
 add_executable(${PROJECT_NAME}
 ${INC_PATH}/application.c
@@ -60,9 +36,7 @@ ${SOURCE_PATH}/cube.c
 ${SOURCE_PATH}/camera.c
 ${SOURCE_PATH}/rainbow_plane.c
 ${SOURCE_PATH}/UI.c
-${CMAKE_CURRENT_BINARY_DIR}/alpha.o
-${CMAKE_CURRENT_BINARY_DIR}/font.o
-${CMAKE_CURRENT_BINARY_DIR}/colors.o)
+)
 
 if(PLATFORM_PSP)
     

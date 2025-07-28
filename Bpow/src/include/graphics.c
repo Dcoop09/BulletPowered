@@ -4,9 +4,8 @@
 #include <malloc.h>
 #include <string.h>
 
-#include <logger.h>
-
 #include "graphics.h"
+#include "file.h"
 
 #define BUF_WIDTH (512)
 #define SCR_WIDTH (480)
@@ -134,6 +133,7 @@ void initGraphics()
 
 	sceDisplayWaitVblankStart();
 	sceGuDisplay(GU_TRUE);
+	return;
 }
 
 //translate the camera to the new position givin by it's transform
@@ -149,6 +149,7 @@ void apply_camera()
 
 	sceGumMatrixMode(GU_MODEL);
 	sceGumLoadIdentity();
+	return;
 }
 
 void startframe(Camera3D cam) 
@@ -171,6 +172,7 @@ void startframe(Camera3D cam)
 
 	mainCam = cam;
 	apply_camera(mainCam);
+	return;
 }
 
 void endframe() 
@@ -180,6 +182,7 @@ void endframe()
 
 	sceDisplayWaitVblankStart();
 	sceGuSwapBuffers();
+	return;
 }
 
 void loadTexture(void* texture, int textureX, int textureY, char vram, char sharp)
@@ -187,11 +190,11 @@ void loadTexture(void* texture, int textureX, int textureY, char vram, char shar
 	if(texture == NULL) 
 	{
 		sceGuDisable(GU_TEXTURE_2D);
+		return;
 
 	} else 
 	{
 		sceGuEnable(GU_TEXTURE_2D);
-
 
 		unsigned int pW, pH;
 		pW = pow2(textureX);
@@ -224,6 +227,7 @@ void loadTexture(void* texture, int textureX, int textureY, char vram, char shar
 		sceGuTexScale(1.0f, 1.0f);
 		sceGuTexOffset(0.0f, 0.0f);
 		sceGuAmbientColor(0xffffffff);
+		return;
 	}
 }
 
@@ -236,6 +240,7 @@ void renderMesh(ScePspFVector3 pos, ScePspFVector3 rot, ScePspFVector3 scale, in
 	sceGumScale(&scale);
 
 	sceGumDrawArray(GU_TRIANGLES, GU_TEXTURE_32BITF|GU_COLOR_5551|GU_VERTEX_32BITF|GU_TRANSFORM_3D, verticeCount, 0, vertices);
+	return;
 }
 
 void renderSprite(ScePspFVector3 pos, float rot, ScePspFVector3 scale, int verticeCount, void* vertices)
@@ -248,6 +253,7 @@ void renderSprite(ScePspFVector3 pos, float rot, ScePspFVector3 scale, int verti
 	sceGumScale(&scale);
 
 	sceGumDrawArray(GU_TRIANGLES, GU_TEXTURE_32BITF|GU_COLOR_5551|GU_VERTEX_32BITF|GU_TRANSFORM_3D, verticeCount, 0, vertices);
+	return;
 }
 
 void renderUI(ScePspFVector3 pos, float rot, ScePspFVector3 scale, int verticeCount, void* vertices)
@@ -282,9 +288,10 @@ void renderUI(ScePspFVector3 pos, float rot, ScePspFVector3 scale, int verticeCo
 	sceGuDepthRange(65535,0);
 
 	apply_camera();
+	return;
 }
 
-Tilemap* loadFont(void* texture, int texSizeX, int texSizeY, int sizeX, int sizeY) 
+Tilemap* loadFont(char* textureName, int texSizeX, int texSizeY, int sizeX, int sizeY) 
 {
 	Tilemap* tilemap = (Tilemap*)malloc(sizeof(Tilemap));
 		if(tilemap == NULL) return NULL;
@@ -307,7 +314,7 @@ Tilemap* loadFont(void* texture, int texSizeX, int texSizeY, int sizeX, int size
 
 	memset(tilemap->tiles, 0, sizeof(Tile) * sizeX * sizeY);
 
-	tilemap->tex = texture;
+	tilemap->tex = openTexFile(textureName);
 	tilemap->textureSizeX = texSizeX;
 	tilemap->textureSizeY = texSizeY;
 	tilemap->spriteSizeX = texSizeX / sizeX;
@@ -352,4 +359,5 @@ void drawText(Tilemap* t, ScePspFVector3 pos, float rot, float scale, const unsi
 
 		pos.x += 2.0f * scale;
 	}
+	return;
 }

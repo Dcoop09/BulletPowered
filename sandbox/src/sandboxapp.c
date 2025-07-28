@@ -29,11 +29,6 @@ void masterProcess(float delta)
     if(cube == -1)
     {
         cube = (char)funcAppend(&cubeUpdate);
-        printValue(cube);
-        if(cube == 0) 
-        {
-            print("SECCESS");
-        }
     }
 
     if(cube != -1 && startup == 0) 

@@ -68,4 +68,8 @@ CMakeFiles/sandboxapp.dir/sandbox/src/cube.c.obj: \
  /home/cooper/pspdev/psp/sdk/include/pspintrman_kernel.h \
  /home/cooper/pspdev/psp/sdk/include/pspmodulemgr_kernel.h \
  /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/graphics.h \
- /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/input.h
+ /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/input.h \
+ /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/file.h \
+ /home/cooper/pspdev/psp/include/stdio.h \
+ /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stdarg.h \
+ /home/cooper/pspdev/psp/include/sys/stdio.h
