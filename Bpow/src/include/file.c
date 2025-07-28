@@ -48,13 +48,13 @@ void* openTexFile(const char* targetTex)
     FILE* file = fopen(strcat(textureFolder, targetTex), "r");
     if(!file) 
     {
-        print("failed to locate %s\n", textureFolder);
+        throwError("failed to locate %s\n", textureFolder);
         return NULL;
     }
     long fileSize = getFileSize(file);
     if(fileSize < 0)
     {
-        print("failed to get size of %s\n", textureFolder);
+        throwError("failed to get size of %s\n", textureFolder);
         return NULL;
     }
     print("%s\n", textureFolder);
