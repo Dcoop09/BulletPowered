@@ -4,10 +4,12 @@
 CMakeFiles/sandboxapp.dir/Bpow/src/include/application.c.obj: /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/application.c \
   /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/application.h \
   /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/callbacks.h \
+  /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/file.h \
   /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/graphics.h \
   /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/input.h \
   /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/logger.h \
   /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/limits.h \
+  /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stdarg.h \
   /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stddef.h \
   /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stdint.h \
   /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/syslimits.h \
@@ -28,6 +30,7 @@ CMakeFiles/sandboxapp.dir/Bpow/src/include/application.c.obj: /home/cooper/PSP\ 
   /home/cooper/pspdev/psp/include/newlib.h \
   /home/cooper/pspdev/psp/include/signal.h \
   /home/cooper/pspdev/psp/include/stdint.h \
+  /home/cooper/pspdev/psp/include/stdio.h \
   /home/cooper/pspdev/psp/include/string.h \
   /home/cooper/pspdev/psp/include/strings.h \
   /home/cooper/pspdev/psp/include/sys/_intsup.h \
@@ -46,6 +49,7 @@ CMakeFiles/sandboxapp.dir/Bpow/src/include/application.c.obj: /home/cooper/PSP\ 
   /home/cooper/pspdev/psp/include/sys/sched.h \
   /home/cooper/pspdev/psp/include/sys/select.h \
   /home/cooper/pspdev/psp/include/sys/signal.h \
+  /home/cooper/pspdev/psp/include/sys/stdio.h \
   /home/cooper/pspdev/psp/include/sys/string.h \
   /home/cooper/pspdev/psp/include/sys/syslimits.h \
   /home/cooper/pspdev/psp/include/sys/time.h \
@@ -147,6 +151,32 @@ CMakeFiles/sandboxapp.dir/Bpow/src/include/callbacks.c.obj: /home/cooper/PSP\ Ho
   /home/cooper/pspdev/psp/sdk/include/psptypes.h \
   /home/cooper/pspdev/psp/sdk/include/pspuser.h \
   /home/cooper/pspdev/psp/sdk/include/psputils.h
+
+CMakeFiles/sandboxapp.dir/Bpow/src/include/file.c.obj: /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/file.c \
+  /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/file.h \
+  /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/logger.h \
+  /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stdarg.h \
+  /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stddef.h \
+  /home/cooper/pspdev/psp/include/_ansi.h \
+  /home/cooper/pspdev/psp/include/_newlib_version.h \
+  /home/cooper/pspdev/psp/include/machine/_default_types.h \
+  /home/cooper/pspdev/psp/include/machine/_types.h \
+  /home/cooper/pspdev/psp/include/machine/ieeefp.h \
+  /home/cooper/pspdev/psp/include/machine/malloc.h \
+  /home/cooper/pspdev/psp/include/malloc.h \
+  /home/cooper/pspdev/psp/include/newlib.h \
+  /home/cooper/pspdev/psp/include/stdio.h \
+  /home/cooper/pspdev/psp/include/string.h \
+  /home/cooper/pspdev/psp/include/strings.h \
+  /home/cooper/pspdev/psp/include/sys/_locale.h \
+  /home/cooper/pspdev/psp/include/sys/_types.h \
+  /home/cooper/pspdev/psp/include/sys/cdefs.h \
+  /home/cooper/pspdev/psp/include/sys/config.h \
+  /home/cooper/pspdev/psp/include/sys/features.h \
+  /home/cooper/pspdev/psp/include/sys/lock.h \
+  /home/cooper/pspdev/psp/include/sys/reent.h \
+  /home/cooper/pspdev/psp/include/sys/stdio.h \
+  /home/cooper/pspdev/psp/include/sys/string.h
 
 CMakeFiles/sandboxapp.dir/Bpow/src/include/graphics.c.obj: /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/graphics.c \
   /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/graphics.h \
@@ -583,8 +613,6 @@ CMakeFiles/sandboxapp.dir/sandbox/src/sandboxapp.c.obj: /home/cooper/PSP\ Homebr
 
 /home/cooper/PSP\ Homebrewing/BulletPowered/sandbox/src/rainbow_plane.c:
 
-/home/cooper/PSP\ Homebrewing/BulletPowered/sandbox/src/cube.c:
-
 /home/cooper/PSP\ Homebrewing/BulletPowered/sandbox/src/camera.h:
 
 /home/cooper/PSP\ Homebrewing/BulletPowered/sandbox/src/camera.c:
@@ -593,15 +621,13 @@ CMakeFiles/sandboxapp.dir/sandbox/src/sandboxapp.c.obj: /home/cooper/PSP\ Homebr
 
 /home/cooper/PSP\ Homebrewing/BulletPowered/sandbox/src/UI.c:
 
-/home/cooper/pspdev/psp/include/stdio.h:
-
-/home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stdarg.h:
-
 /home/cooper/pspdev/psp/sdk/include/pspctrl.h:
 
 /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/input.c:
 
 /home/cooper/pspdev/psp/sdk/include/pspgum.h:
+
+/home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/file.c:
 
 /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/callbacks.c:
 
@@ -639,35 +665,49 @@ CMakeFiles/sandboxapp.dir/sandbox/src/sandboxapp.c.obj: /home/cooper/PSP\ Homebr
 
 /home/cooper/pspdev/psp/sdk/include/pspiofilemgr_stat.h:
 
-/home/cooper/pspdev/psp/sdk/include/pspmodulemgr_kernel.h:
-
-/home/cooper/pspdev/psp/include/string.h:
+/home/cooper/pspdev/psp/sdk/include/pspiofilemgr_fcntl.h:
 
 /home/cooper/pspdev/psp/sdk/include/pspiofilemgr_dirent.h:
 
 /home/cooper/pspdev/psp/include/newlib.h:
 
+/home/cooper/pspdev/psp/sdk/include/pspiofilemgr_devctl.h:
+
+/home/cooper/pspdev/psp/include/sys/lock.h:
+
 /home/cooper/pspdev/psp/include/sys/time.h:
 
 /home/cooper/pspdev/psp/include/machine/malloc.h:
 
-/home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/logger.h:
-
 /home/cooper/pspdev/psp/include/sys/_sigset.h:
 
-/home/cooper/pspdev/psp/include/machine/endian.h:
+/home/cooper/pspdev/psp/sdk/include/pspiofilemgr_kernel.h:
 
-/home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/application.h:
-
-/home/cooper/pspdev/psp/include/machine/_time.h:
+/home/cooper/pspdev/psp/include/malloc.h:
 
 /home/cooper/PSP\ Homebrewing/BulletPowered/sandbox/src/sandboxapp.c:
 
 /home/cooper/pspdev/psp/include/_newlib_version.h:
 
-/home/cooper/pspdev/psp/include/sys/timespec.h:
+/home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/application.h:
 
-/home/cooper/pspdev/psp/include/sys/_types.h:
+/home/cooper/pspdev/psp/include/machine/_time.h:
+
+/home/cooper/PSP\ Homebrewing/BulletPowered/sandbox/src/cmake_config.h:
+
+/home/cooper/pspdev/psp/include/sys/stdio.h:
+
+/home/cooper/pspdev/psp/include/machine/_default_types.h:
+
+/home/cooper/pspdev/psp/include/machine/endian.h:
+
+/home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/application.c:
+
+/home/cooper/pspdev/psp/sdk/include/pspiofilemgr.h:
+
+/home/cooper/pspdev/psp/include/bits/posix_opt.h:
+
+/home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stdint.h:
 
 /home/cooper/pspdev/psp/include/sys/sched.h:
 
@@ -691,19 +731,9 @@ CMakeFiles/sandboxapp.dir/sandbox/src/sandboxapp.c.obj: /home/cooper/PSP\ Homebr
 
 /home/cooper/pspdev/psp/include/sys/cdefs.h:
 
-/home/cooper/PSP\ Homebrewing/BulletPowered/sandbox/src/cmake_config.h:
+/home/cooper/PSP\ Homebrewing/BulletPowered/sandbox/src/cube.c:
 
-/home/cooper/pspdev/psp/include/sys/stdio.h:
-
-/home/cooper/pspdev/psp/include/machine/_default_types.h:
-
-/home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stdint.h:
-
-/home/cooper/pspdev/psp/include/bits/posix_opt.h:
-
-/home/cooper/pspdev/psp/sdk/include/pspge.h:
-
-/home/cooper/pspdev/psp/include/limits.h:
+/home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/file.h:
 
 /home/cooper/pspdev/psp/sdk/include/pspgu.h:
 
@@ -711,17 +741,27 @@ CMakeFiles/sandboxapp.dir/sandbox/src/sandboxapp.c.obj: /home/cooper/PSP\ Homebr
 
 /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stddef.h:
 
+/home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/logger.h:
+
+/home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stdarg.h:
+
+/home/cooper/pspdev/psp/sdk/include/pspge.h:
+
+/home/cooper/pspdev/psp/include/limits.h:
+
+/home/cooper/pspdev/psp/include/stdio.h:
+
+/home/cooper/pspdev/psp/sdk/include/pspmodulemgr_kernel.h:
+
+/home/cooper/pspdev/psp/include/string.h:
+
+/home/cooper/pspdev/psp/include/sys/_types.h:
+
+/home/cooper/pspdev/psp/include/sys/timespec.h:
+
 /home/cooper/pspdev/psp/sdk/include/pspsysreg.h:
 
 /home/cooper/pspdev/psp/include/strings.h:
-
-/home/cooper/pspdev/psp/sdk/include/pspiofilemgr.h:
-
-/home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/application.c:
-
-/home/cooper/pspdev/psp/sdk/include/pspiofilemgr_kernel.h:
-
-/home/cooper/pspdev/psp/include/malloc.h:
 
 /home/cooper/pspdev/psp/include/signal.h:
 
@@ -735,9 +775,9 @@ CMakeFiles/sandboxapp.dir/sandbox/src/sandboxapp.c.obj: /home/cooper/PSP\ Homebr
 
 /home/cooper/pspdev/psp/include/machine/types.h:
 
-/home/cooper/pspdev/lib/gcc/psp/14.1.0/include/limits.h:
-
 /home/cooper/pspdev/psp/include/sys/_stdint.h:
+
+/home/cooper/pspdev/lib/gcc/psp/14.1.0/include/limits.h:
 
 /home/cooper/pspdev/psp/include/sys/_timespec.h:
 
@@ -772,9 +812,3 @@ CMakeFiles/sandboxapp.dir/sandbox/src/sandboxapp.c.obj: /home/cooper/PSP\ Homebr
 /home/cooper/pspdev/psp/sdk/include/pspdebug.h:
 
 /home/cooper/pspdev/psp/sdk/include/pspintrman.h:
-
-/home/cooper/pspdev/psp/include/sys/lock.h:
-
-/home/cooper/pspdev/psp/sdk/include/pspiofilemgr_devctl.h:
-
-/home/cooper/pspdev/psp/sdk/include/pspiofilemgr_fcntl.h:

@@ -9,6 +9,7 @@
 #include "logger.h"
 #include "graphics.h"
 #include "input.h"
+#include "file.h"
 
 #define BUF_WIDTH (512)
 #define SCR_WIDTH (480)
@@ -121,6 +122,8 @@ void runProcess(Application* app)
 		startframe(*app->mainCamera);
 
 		ctrlUpdate();
+
+		print((char*)openFile("test.txt"));
 
 		app->processMaster(delta);
 

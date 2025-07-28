@@ -177,6 +177,30 @@ Bpow/src/include/callbacks.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sandboxapp.dir/build.make CMakeFiles/sandboxapp.dir/Bpow/src/include/callbacks.c.s
 .PHONY : Bpow/src/include/callbacks.c.s
 
+Bpow/src/include/file.obj: Bpow/src/include/file.c.obj
+.PHONY : Bpow/src/include/file.obj
+
+# target to build an object file
+Bpow/src/include/file.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sandboxapp.dir/build.make CMakeFiles/sandboxapp.dir/Bpow/src/include/file.c.obj
+.PHONY : Bpow/src/include/file.c.obj
+
+Bpow/src/include/file.i: Bpow/src/include/file.c.i
+.PHONY : Bpow/src/include/file.i
+
+# target to preprocess a source file
+Bpow/src/include/file.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sandboxapp.dir/build.make CMakeFiles/sandboxapp.dir/Bpow/src/include/file.c.i
+.PHONY : Bpow/src/include/file.c.i
+
+Bpow/src/include/file.s: Bpow/src/include/file.c.s
+.PHONY : Bpow/src/include/file.s
+
+# target to generate assembly for a file
+Bpow/src/include/file.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sandboxapp.dir/build.make CMakeFiles/sandboxapp.dir/Bpow/src/include/file.c.s
+.PHONY : Bpow/src/include/file.c.s
+
 Bpow/src/include/graphics.obj: Bpow/src/include/graphics.c.obj
 .PHONY : Bpow/src/include/graphics.obj
 
@@ -384,6 +408,9 @@ help:
 	@echo "... Bpow/src/include/callbacks.obj"
 	@echo "... Bpow/src/include/callbacks.i"
 	@echo "... Bpow/src/include/callbacks.s"
+	@echo "... Bpow/src/include/file.obj"
+	@echo "... Bpow/src/include/file.i"
+	@echo "... Bpow/src/include/file.s"
 	@echo "... Bpow/src/include/graphics.obj"
 	@echo "... Bpow/src/include/graphics.i"
 	@echo "... Bpow/src/include/graphics.s"

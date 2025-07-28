@@ -16,7 +16,9 @@ set(INC_PATH Bpow/src/include)
 
 set(SOURCE_PATH sandbox/src)
 
-set(TEXTURE_PATH sandbox/assets/textures)
+set(ASSETS_PATH sandbox/assets)
+
+set(TEXTURE_PATH ${ASSETS_PATH}/textures)
 set(TEXTURE_FILES
     ${TEXTURE_PATH}/alpha.data
     ${TEXTURE_PATH}/font.data
@@ -28,6 +30,7 @@ set(OBJECT_FILES "")
 include_directories(${INC_PATH})
 include_directories(${PSPSDK}/lib/build.mak)
 
+file(COPY "${ASSETS_PATH}" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
 
 foreach(TEX_FILE IN LISTS TEXTURE_FILES)
     get_filename_component(BASENAME ${TEX_FILE} NAME_WE)
@@ -50,6 +53,7 @@ ${INC_PATH}/callbacks.c
 ${INC_PATH}/graphics.c 
 ${INC_PATH}/logger.c
 ${INC_PATH}/input.c
+${INC_PATH}/file.c
 
 ${SOURCE_PATH}/sandboxapp.c
 ${SOURCE_PATH}/cube.c

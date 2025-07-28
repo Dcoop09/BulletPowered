@@ -76,4 +76,8 @@ CMakeFiles/sandboxapp.dir/Bpow/src/include/application.c.obj: \
  /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/graphics.h \
  /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/callbacks.h \
  /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/logger.h \
- /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/input.h
+ /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/input.h \
+ /home/cooper/PSP\ Homebrewing/BulletPowered/Bpow/src/include/file.h \
+ /home/cooper/pspdev/psp/include/stdio.h \
+ /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stdarg.h \
+ /home/cooper/pspdev/psp/include/sys/stdio.h

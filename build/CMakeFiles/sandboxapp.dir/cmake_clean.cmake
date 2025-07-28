@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sandboxapp.dir/Bpow/src/include/application.c.obj.d"
   "CMakeFiles/sandboxapp.dir/Bpow/src/include/callbacks.c.obj"
   "CMakeFiles/sandboxapp.dir/Bpow/src/include/callbacks.c.obj.d"
+  "CMakeFiles/sandboxapp.dir/Bpow/src/include/file.c.obj"
+  "CMakeFiles/sandboxapp.dir/Bpow/src/include/file.c.obj.d"
   "CMakeFiles/sandboxapp.dir/Bpow/src/include/graphics.c.obj"
   "CMakeFiles/sandboxapp.dir/Bpow/src/include/graphics.c.obj.d"
   "CMakeFiles/sandboxapp.dir/Bpow/src/include/input.c.obj"
