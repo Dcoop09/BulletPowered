@@ -182,6 +182,7 @@ CMakeFiles/sandboxapp.dir/Bullet/src/include/file.c.obj: /home/cooper/PSP\ Homeb
 CMakeFiles/sandboxapp.dir/Bullet/src/include/graphics.c.obj: /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/graphics.c \
   /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/file.h \
   /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/graphics.h \
+  /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/logger.h \
   /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stdarg.h \
   /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stddef.h \
   /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stdint.h \
@@ -245,12 +246,9 @@ CMakeFiles/sandboxapp.dir/Bullet/src/include/logger.c.obj: /home/cooper/PSP\ Hom
   /home/cooper/pspdev/psp/sdk/include/psptypes.h
 
 CMakeFiles/sandboxapp.dir/Bullet/src/include/savefile.c.obj: /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/savefile.c \
-  /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/callbacks.h \
   /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/graphics.h \
-  /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/logger.h \
   /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/savefile.h \
   /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/limits.h \
-  /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stdarg.h \
   /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stddef.h \
   /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stdint.h \
   /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/syslimits.h \
@@ -271,7 +269,6 @@ CMakeFiles/sandboxapp.dir/Bullet/src/include/savefile.c.obj: /home/cooper/PSP\ H
   /home/cooper/pspdev/psp/include/newlib.h \
   /home/cooper/pspdev/psp/include/signal.h \
   /home/cooper/pspdev/psp/include/stdint.h \
-  /home/cooper/pspdev/psp/include/stdio.h \
   /home/cooper/pspdev/psp/include/stdlib.h \
   /home/cooper/pspdev/psp/include/string.h \
   /home/cooper/pspdev/psp/include/strings.h \
@@ -291,7 +288,6 @@ CMakeFiles/sandboxapp.dir/Bullet/src/include/savefile.c.obj: /home/cooper/PSP\ H
   /home/cooper/pspdev/psp/include/sys/sched.h \
   /home/cooper/pspdev/psp/include/sys/select.h \
   /home/cooper/pspdev/psp/include/sys/signal.h \
-  /home/cooper/pspdev/psp/include/sys/stdio.h \
   /home/cooper/pspdev/psp/include/sys/string.h \
   /home/cooper/pspdev/psp/include/sys/syslimits.h \
   /home/cooper/pspdev/psp/include/sys/time.h \
@@ -302,7 +298,6 @@ CMakeFiles/sandboxapp.dir/Bullet/src/include/savefile.c.obj: /home/cooper/PSP\ H
   /home/cooper/pspdev/psp/sdk/include/pspdisplay.h \
   /home/cooper/pspdev/psp/sdk/include/pspge.h \
   /home/cooper/pspdev/psp/sdk/include/pspgu.h \
-  /home/cooper/pspdev/psp/sdk/include/pspgum.h \
   /home/cooper/pspdev/psp/sdk/include/pspintrman.h \
   /home/cooper/pspdev/psp/sdk/include/pspintrman_kernel.h \
   /home/cooper/pspdev/psp/sdk/include/pspiofilemgr.h \
@@ -345,6 +340,7 @@ CMakeFiles/sandboxapp.dir/Bullet/src/include/savefile.c.obj: /home/cooper/PSP\ H
 CMakeFiles/sandboxapp.dir/sandbox/src/UI.c.obj: /home/cooper/PSP\ Homebrewing/Bullet/sandbox/src/UI.c \
   /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/file.h \
   /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/graphics.h \
+  /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/logger.h \
   /home/cooper/PSP\ Homebrewing/Bullet/sandbox/src/UI.h \
   /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/limits.h \
   /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stdarg.h \
@@ -642,7 +638,6 @@ CMakeFiles/sandboxapp.dir/sandbox/src/sandboxapp.c.obj: /home/cooper/PSP\ Homebr
   /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/callbacks.h \
   /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/entrypoint.h \
   /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/graphics.h \
-  /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/logger.h \
   /home/cooper/PSP\ Homebrewing/Bullet/sandbox/src/UI.h \
   /home/cooper/PSP\ Homebrewing/Bullet/sandbox/src/camera.h \
   /home/cooper/PSP\ Homebrewing/Bullet/sandbox/src/cube.h \

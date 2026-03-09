@@ -10,8 +10,8 @@
 #define texX 64
 #define texY 64
 
-#define icon "ICON.data"
-#define background "Background.data"
+#define icon "ICON.png"
+#define background "Background.png"
 
 Savefile gamefile;
 
@@ -104,10 +104,10 @@ void cubeUpdate(float delta)
 
 	if(rtriggerPressed)
 	{
-		saveSavefile(gamefile);
+		saveSavefile(&gamefile);
 	}else if (ltriggerPressed)
 	{
-		openSavefile(gamefile);
+		print((char*)openSavefile(&gamefile));
 	}
 	
 

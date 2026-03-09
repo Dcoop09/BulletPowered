@@ -89,7 +89,5 @@ CMakeFiles/sandboxapp.dir/Bullet/src/include/savefile.c.obj: \
  /home/cooper/pspdev/psp/include/stdlib.h \
  /home/cooper/pspdev/psp/include/machine/stdlib.h \
  /home/cooper/pspdev/psp/include/alloca.h \
- /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/logger.h \
  /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/savefile.h \
- /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/callbacks.h \
  /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/graphics.h

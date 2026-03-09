@@ -1,6 +1,7 @@
 #include <pspkernel.h>
 #include <graphics.h>
 #include <file.h>
+#include <logger.h>
 
 #include "UI.h"
 

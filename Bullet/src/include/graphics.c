@@ -6,6 +6,7 @@
 
 #include "graphics.h"
 #include "file.h"
+#include "logger.h"
 
 #define BUF_WIDTH (512)
 #define SCR_WIDTH (480)
@@ -139,16 +140,10 @@ void initGraphics()
 //translate the camera to the new position givin by it's transform
 void apply_camera()
 {
-	sceGumMatrixMode(GU_VIEW);
-	sceGumLoadIdentity();
-
 	ScePspFVector3 pos = {mainCam.x, mainCam.y, mainCam.z};
 	ScePspFVector3 rot = {(mainCam.pitch / 180.0f) * GU_PI, (mainCam.yaw / 180.0f) * GU_PI, 0.0f};
 	sceGumRotateXYZ(&rot);
 	sceGumTranslate(&pos);
-
-	sceGumMatrixMode(GU_MODEL);
-	sceGumLoadIdentity();
 	return;
 }
 
@@ -167,11 +162,12 @@ void startframe(Camera3D cam)
 	sceGumMatrixMode(GU_VIEW);
 	sceGumLoadIdentity();
 
+	mainCam = cam;
+	apply_camera(mainCam);
+
 	sceGumMatrixMode(GU_MODEL);
 	sceGumLoadIdentity();
 
-	mainCam = cam;
-	apply_camera(mainCam);
 	return;
 }
 
@@ -349,7 +345,7 @@ Tilemap* loadFont(char* textureName, int texSizeX, int texSizeY, int sizeX, int 
 
 void drawText(Tilemap* t, ScePspFVector3 pos, float rot, float scale, const unsigned char* str)
 {
-	int len = strlen(str);
+	int len = strlen(str) - 1;
 	ScePspFVector3 targetScale = {scale, scale, scale};
 
 	for(int i = 0; i < len; i++)

@@ -2,7 +2,6 @@
 #include <pspdebug.h>
 #include <entrypoint.h>
 #include <graphics.h>
-#include <logger.h>
 
 #include <cmake_config.h>
 
@@ -30,7 +29,7 @@ void masterProcess(float delta)
     if(cube != -1 && startup == 0) 
     {
         funcRemove(cube);
-        cube = -1;
+        cube = 0;
         startup = -1;
     }
 

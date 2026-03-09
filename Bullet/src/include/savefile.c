@@ -4,9 +4,7 @@
 #include <pspdisplay.h>
 #include <string.h>
 #include <stdlib.h>
-#include "logger.h"
 #include "savefile.h"
-#include "callbacks.h"
 #include "graphics.h"
 
 Savefile gameSave;
@@ -23,13 +21,13 @@ char nameMultiple[][20] =
 
 static Vertex __attribute__((aligned(16))) plane[2*3] =
 {
-	{1, 0, 0x801f,-10,-10, 0}, // 0
-	{0, 0, 0x8000,-10, 10, 0}, // 1
-	{0, 1, 0x83e0, 10, 10, 0}, // 2
+	{1, 0, 0xB566,-10,-10, 0}, // 0
+	{0, 0, 0xB566,-10, 10, 0}, // 1
+	{0, 1, 0xA906, 20, 10, 0}, // 2
 
-	{1, 0, 0x801f,-10,-10, 0}, // 0
-	{0, 1, 0x83e0, 10, 10, 0}, // 2
-	{1, 1, 0xfc00, 10,-10, 0}, // 3
+	{1, 0, 0xB566,-10,-10, 0}, // 0
+	{0, 1, 0xA906, 20, 10, 0}, // 2
+	{1, 1, 0xA906, 20,-10, 0}, // 3
 };
 
 PspUtilitySavedataListSaveNewData newData;
@@ -111,19 +109,30 @@ void initSavedata(SceUtilitySavedataParam * savedata, int mode)
 
 static void showSaveDialog (int mode)
 {
+    Camera3D cam = 
+    {
+	    .x = 0.0f,
+	    .y = 0.0f,
+	    .z = 0.0f,
+	    .yaw = 0.0f,
+    	.pitch = 0.0f
+    };
+
 	SceUtilitySavedataParam dialog;
 
     initSavedata(&dialog, mode);
 
-	
     sceUtilitySavedataInitStart(&dialog);
 
-    while(running()) {
+	while(1==1) {
 
-	ScePspFVector3 gridpos = {0.0f, 0.0f, -10.0f};
+	ScePspFVector3 gridpos = {-5.0f, 0.0f, -10.0f};
 	ScePspFVector3 gridrot = {0.0f, 0.0f, -0.0f};
 	loadTexture(NULL, 0, 0, VRAM_FALSE, SHARP_FALSE);
 	renderMesh(gridpos, gridrot, (ScePspFVector3){1, 1, 1}, sizeof(plane)/sizeof(plane[0]), plane);
+
+    sceGuFinish();
+    sceGuSync(0,0);
 
 	switch(sceUtilitySavedataGetStatus()) {
     case PSP_UTILITY_DIALOG_INIT:
@@ -139,39 +148,44 @@ static void showSaveDialog (int mode)
 	    break;
 	    
 	case PSP_UTILITY_DIALOG_FINISHED :
-        break;
+        if(mode = PSP_UTILITY_SAVEDATA_LISTLOAD) 
+		{
+			gameSave.data = dialog.dataBuf;
+		}
 			
 	case PSP_UTILITY_DIALOG_NONE :
 	    return;
 	}
-
-    sceGuSync(0, 0);
 	sceDisplayWaitVblankStart();
 	sceGuSwapBuffers();
+
+	//called last so order isn't messed up
+	startframe(cam);
     }
 }
 
-void setSave(Savefile save) 
+void setSave(Savefile* save) 
 {
-    gameSave.title = save.title;
-    gameSave.gameSerial = save.gameSerial;
-    gameSave.info = save.info;
-    gameSave.iconPicture = save.iconPicture;
-    gameSave.iconPictureSize = save.iconPictureSize;
-    gameSave.backgroundPicture = save.backgroundPicture;
-    gameSave.backgroundPictureSize = save.backgroundPictureSize;
-    gameSave.data = save.data;
-    gameSave.dataSize = save.dataSize;
+    gameSave.title = save->title;
+    gameSave.gameSerial = save->gameSerial;
+    gameSave.info = save->info;
+    gameSave.iconPicture = save->iconPicture;
+    gameSave.iconPictureSize = save->iconPictureSize;
+    gameSave.backgroundPicture = save->backgroundPicture;
+    gameSave.backgroundPictureSize = save->backgroundPictureSize;
+    gameSave.data = save->data;
+    gameSave.dataSize = save->dataSize;
 }
 
-void saveSavefile(Savefile save) 
+void saveSavefile(Savefile* save) 
 {
     setSave(save);
     showSaveDialog(PSP_UTILITY_SAVEDATA_LISTSAVE);
 }
 
-void openSavefile(Savefile save) 
+void* openSavefile(Savefile* save) 
 {
     setSave(save);
     showSaveDialog(PSP_UTILITY_SAVEDATA_LISTLOAD);
+	return gameSave.data;
 }

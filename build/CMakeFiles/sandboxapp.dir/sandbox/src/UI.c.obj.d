@@ -72,4 +72,5 @@ CMakeFiles/sandboxapp.dir/sandbox/src/UI.c.obj: \
  /home/cooper/pspdev/psp/include/stdio.h \
  /home/cooper/pspdev/lib/gcc/psp/14.1.0/include/stdarg.h \
  /home/cooper/pspdev/psp/include/sys/stdio.h \
+ /home/cooper/PSP\ Homebrewing/Bullet/Bullet/src/include/logger.h \
  /home/cooper/PSP\ Homebrewing/Bullet/sandbox/src/UI.h
