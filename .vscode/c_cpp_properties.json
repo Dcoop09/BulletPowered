@@ -4,15 +4,16 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "~/pspdev/psp/sdk/include",
-                "~/pspdev/psp/include",
-                "${workspaceFolder}/Bpow/src/include"
+                "//wsl.localhost/Ubuntu/home/dcoop09/pspdev/psp/sdk/include",
+                "//wsl.localhost//Ubuntu//home/dcoop09/pspdev/psp/include",
+                "${workspaceFolder}/Bullet/src/include"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/gcc",
+            "compilerPath": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
             "cStandard": "c17",
             "cppStandard": "gnu++17",
-            "intelliSenseMode": "linux-gcc-x64"
+            "intelliSenseMode": "windows-gcc-x64",
+            "configurationProvider": "ms-vscode.makefile-tools"
         }
     ],
     "version": 4

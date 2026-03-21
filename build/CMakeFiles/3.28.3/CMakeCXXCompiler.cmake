@@ -1,7 +1,7 @@
-set(CMAKE_CXX_COMPILER "/home/cooper/pspdev/bin/psp-g++")
+set(CMAKE_CXX_COMPILER "/home/dcoop09/pspdev/bin/psp-g++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
-set(CMAKE_CXX_COMPILER_VERSION "14.1.0")
+set(CMAKE_CXX_COMPILER_VERSION "15.2.0")
 set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_CXX_COMPILER_WRAPPER "")
 set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "17")
@@ -22,11 +22,11 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "/home/cooper/pspdev/bin/psp-ar")
-set(CMAKE_CXX_COMPILER_AR "/home/cooper/pspdev/bin/psp-gcc-ar")
-set(CMAKE_RANLIB "/home/cooper/pspdev/bin/psp-ranlib")
-set(CMAKE_CXX_COMPILER_RANLIB "/home/cooper/pspdev/bin/psp-gcc-ranlib")
-set(CMAKE_LINKER "/home/cooper/pspdev/bin/psp-ld")
+set(CMAKE_AR "/home/dcoop09/pspdev/bin/psp-ar")
+set(CMAKE_CXX_COMPILER_AR "/home/dcoop09/pspdev/bin/psp-gcc-ar")
+set(CMAKE_RANLIB "/home/dcoop09/pspdev/bin/psp-ranlib")
+set(CMAKE_CXX_COMPILER_RANLIB "/home/dcoop09/pspdev/bin/psp-gcc-ranlib")
+set(CMAKE_LINKER "/home/dcoop09/pspdev/bin/psp-ld")
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
@@ -79,7 +79,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/home/cooper/pspdev/psp/sdk/include;/home/cooper/pspdev/psp/include/c++/14.1.0;/home/cooper/pspdev/psp/include/c++/14.1.0/psp;/home/cooper/pspdev/psp/include/c++/14.1.0/backward;/home/cooper/pspdev/lib/gcc/psp/14.1.0/include;/home/cooper/pspdev/lib/gcc/psp/14.1.0/include-fixed;/home/cooper/pspdev/psp/include")
-set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc;m;pthreadglue;pthread;cglue;c;psputility;psprtc;pspnet_inet;pspnet_resolver;pspsdk;pspmodinfo;pspuser;pspkernel;gcc")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/home/cooper/pspdev/lib;/home/cooper/pspdev/psp/lib;/home/cooper/pspdev/psp/sdk/lib;/home/cooper/pspdev/lib/gcc/psp/14.1.0;/home/cooper/pspdev/lib/gcc")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/home/dcoop09/pspdev/psp/sdk/include;/home/dcoop09/pspdev/psp/include/c++/15.2.0;/home/dcoop09/pspdev/psp/include/c++/15.2.0/psp;/home/dcoop09/pspdev/psp/include/c++/15.2.0/backward;/home/dcoop09/pspdev/lib/gcc/psp/15.2.0/include;/home/dcoop09/pspdev/lib/gcc/psp/15.2.0/include-fixed;/home/dcoop09/pspdev/psp/include")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc;m;pthreadglue;pthread;cglue;c;psputility;psprtc;pspnet_inet;pspnet_resolver;pspsdk;pspmodinfo;pspuser;gcc")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/home/dcoop09/pspdev/lib;/home/dcoop09/pspdev/psp/lib;/home/dcoop09/pspdev/psp/sdk/lib;/home/dcoop09/pspdev/lib/gcc/psp/15.2.0;/home/dcoop09/pspdev/lib/gcc")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

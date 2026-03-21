@@ -77,7 +77,7 @@ void renderCube()
 {
 	if(!texture)
 	{
-		texture = openTexFile(cubeTex);
+		texture = readTexFile(cubeTex);
 	}
 	ScePspFVector3 pos = {cubeX, cubeY, -5.5f};
 	ScePspFVector3 rot = {val * 0.79f, val * 0.98f, val * 1.32f};
@@ -90,12 +90,15 @@ void cubeUpdate(float delta)
 {
 	if(ready == 0) 
 	{
+		int backgroundFile = openFile(background, TEXTUREFILE);
+		int iconFile = openFile(icon, TEXTUREFILE);
+
 		gamefile.title = "Sandbox";
 		gamefile.info = "A little test game in the bullet engine";
-		gamefile.backgroundPicture = openTexFile(background);
-		gamefile.backgroundPictureSize = getFileBuffer(TEXTUREFILE, background);
-		gamefile.iconPicture = openTexFile(icon);
-		gamefile.iconPictureSize = getFileBuffer(TEXTUREFILE, icon);
+		gamefile.backgroundPicture = readTexFile(background);
+		gamefile.backgroundPictureSize = getFileBuffer(backgroundFile);
+		gamefile.iconPicture = readTexFile(icon);
+		gamefile.iconPictureSize = getFileBuffer(iconFile);
 		gamefile.gameSerial = "NPUO78111";
 		gamefile.data = "Super cool important data!";
 		gamefile.dataSize = 0x20;

@@ -1,3 +1,5 @@
+#include <pspuser.h>
+#include <stdio.h>
 #include <string.h>
 #include <malloc.h>
 #include <cmake_config.h>
@@ -7,102 +9,104 @@
 #define FILE_CHAR_LIMIT 20
 
 //FILE CHAR LIMIT + the path size
-char textureFolder[FILE_CHAR_LIMIT + sizeof(TEXTURE_FOLDER)] = TEXTURE_FOLDER;
-char mp3Folder[FILE_CHAR_LIMIT + sizeof(AUDIO_FOLDER)] = AUDIO_FOLDER;
-char assetFolder[FILE_CHAR_LIMIT + sizeof(ASSET_FOLDER)] = ASSET_FOLDER;
 
-long getFileSize(FILE* file) 
+long getFileSize(int fd) 
 {
-    fseek(file, 0, SEEK_END);
-    long length = ftell(file);
-    fseek(file, 0, SEEK_SET);
+    sceIoLseek(fd, 0, SEEK_END);
+    long length = sceIoLseek(fd, 0, SEEK_CUR);
+    sceIoLseek(fd, 0, SEEK_SET);
     return length;
 }
 
-int getFileBuffer(char type, const char* targetFile) 
+int getFileBuffer(int fd) 
 {
-    FILE* file;
+    if(!fd)
+    {
+        throwError("failed to locate %d\n", fd);
+        return 0;
+    }
+    int buf = getFileSize(fd);
+    if(buf < 0)
+    {
+        throwError("failed to get size of %d\n", fd);
+        return 0;
+    }
+    return buf;
+}
+
+int openFile(const char* targetFile, char type)
+{
+    char* targetPath = "";
     switch (type)
     {
         case 0:
-            file = fopen(targetFile, "r");
+            targetPath = malloc(FILE_CHAR_LIMIT * sizeof(char));
+            targetPath = targetFile;
             break;
         case 1:
-            file = fopen(strcat(mp3Folder, targetFile), "r");
-            strcpy(mp3Folder, AUDIO_FOLDER);
+            targetPath = malloc(FILE_CHAR_LIMIT + strlen(AUDIO_FOLDER) * sizeof(char));
+            sprintf(targetPath, "%s%s", AUDIO_FOLDER, targetFile);
             break;
         case 2:
-            file = fopen(strcat(assetFolder, targetFile), "r");
-            strcpy(assetFolder, ASSET_FOLDER);
+            targetPath = malloc(FILE_CHAR_LIMIT + strlen(ASSET_FOLDER) * sizeof(char));
+            sprintf(targetPath, "%s%s", ASSET_FOLDER, targetFile);
             break;
         case 3:
-            file = fopen(strcat(textureFolder, targetFile), "r");
-            strcpy(textureFolder, TEXTURE_FOLDER);
+            targetPath = malloc(FILE_CHAR_LIMIT + strlen(TEXTURE_FOLDER) * sizeof(char));
+            sprintf(targetPath, "%s%s", TEXTURE_FOLDER, targetFile);
             break;
         default:
             break;
     }
-    if(!file) 
+    int fd = sceIoOpen(targetPath, PSP_O_RDONLY, 0777);
+    if(!fd) 
     {
         throwError("failed to locate %s\n", targetFile);
-        return 0;
+        return -1;
     }
-    
-    int buf = getFileSize(file);
-    if(buf < 0)
-    {
-        throwError("failed to get size of %s\n", assetFolder);
-        return 0;
-    }
-    fclose(file);
-    return buf;
+
+    return fd;
 }
 
-void* openFile(const char* targetFile)
+void closeFile(int fd) 
 {
-    FILE* file = fopen(strcat(assetFolder, targetFile), "r");
-    if(!file) 
-    {
-        throwError("failed to locate %s\n", assetFolder);
-        return NULL;
-    }
-    long fileSize = getFileSize(file);
+    sceIoClose(fd);
+}
+
+void* getFileData(int fd) 
+{
+    long fileSize = getFileSize(fd);
     if(fileSize < 0)
     {
-        throwError("failed to get size of %s\n", assetFolder);
+        throwError("failed to get size of %d\n", fd);
         return NULL;
     }
-
     void* fileContents = malloc(fileSize);
-    fread(fileContents, sizeof(char), fileSize, file);
-    fclose(file);
-
-    strcpy(assetFolder, ASSET_FOLDER);
-
+    sceIoRead(fd, fileContents, fileSize);
     return fileContents;
 }
 
-void* openTexFile(const char* targetTex) 
+void* readTexFile(const char* targetTex) 
 {
-    FILE* file = fopen(strcat(textureFolder, targetTex), "r");
-    if(!file) 
+    char buffer[FILE_CHAR_LIMIT + strlen(TEXTURE_FOLDER)];
+    sprintf(buffer, "%s%s", TEXTURE_FOLDER, targetTex);
+    int fd = sceIoOpen(buffer, PSP_O_RDONLY, 0777);
+    if(!fd) 
     {
-        throwError("failed to locate %s\n", textureFolder);
+        throwError("failed to locate %s\n", targetTex);
         return NULL;
     }
-    long fileSize = getFileSize(file);
+    long fileSize = getFileSize(fd);
     if(fileSize < 0)
     {
-        throwError("failed to get size of %s\n", textureFolder);
+        throwError("failed to get size of %s\n", targetTex);
         return NULL;
     }
-    print("%s\n", textureFolder);
+    print("%s\n", targetTex);
 
     void* fileContents = malloc(fileSize);
-    fread(fileContents, sizeof(char), fileSize, file);
-    fclose(file);
-
-    strcpy(textureFolder, TEXTURE_FOLDER);
+    sceIoRead(fd, fileContents, fileSize);
+    sceIoClose(fd);
 
     return fileContents;
 }

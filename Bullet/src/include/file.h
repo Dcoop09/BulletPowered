@@ -7,8 +7,12 @@
 #define TEXTUREFILE 3
 
 //looks for file in asset folder and returns it's contents
-void* openFile(const char* targetFile);
+int openFile(const char* targetFile, char type);
 
-void* openTexFile(const char* targetTex);
+void* readTexFile(const char* targetTex);
 
-int getFileBuffer(char type, const char* targetFile);
+void closeFile();
+
+void* getFileData(int fd);
+
+int getFileBuffer(int fd);

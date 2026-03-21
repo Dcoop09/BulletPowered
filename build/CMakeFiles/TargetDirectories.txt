@@ -1,3 +1,3 @@
-/home/cooper/PSP Homebrewing/Bullet/build/CMakeFiles/sandboxapp.dir
-/home/cooper/PSP Homebrewing/Bullet/build/CMakeFiles/edit_cache.dir
-/home/cooper/PSP Homebrewing/Bullet/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Owner/Documents/psp-homebrewing/Bullet/build/CMakeFiles/sandboxapp.dir
+/mnt/c/Users/Owner/Documents/psp-homebrewing/Bullet/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Owner/Documents/psp-homebrewing/Bullet/build/CMakeFiles/rebuild_cache.dir

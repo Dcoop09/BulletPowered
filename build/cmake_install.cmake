@@ -1,8 +1,8 @@
-# Install script for directory: /home/cooper/PSP Homebrewing/Bullet
+# Install script for directory: /mnt/c/Users/Owner/Documents/psp-homebrewing/Bullet
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cooper/pspdev/psp")
+  set(CMAKE_INSTALL_PREFIX "/home/dcoop09/pspdev/psp")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/cooper/pspdev/bin/psp-objdump")
+  set(CMAKE_OBJDUMP "/home/dcoop09/pspdev/bin/psp-objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cooper/PSP Homebrewing/Bullet/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/Owner/Documents/psp-homebrewing/Bullet/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

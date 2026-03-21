@@ -310,7 +310,7 @@ Tilemap* loadFont(char* textureName, int texSizeX, int texSizeY, int sizeX, int 
 
 	memset(tilemap->tiles, 0, sizeof(Tile) * sizeX * sizeY);
 
-	tilemap->tex = openTexFile(textureName);
+	tilemap->tex = readTexFile(textureName);
 	tilemap->textureSizeX = texSizeX;
 	tilemap->textureSizeY = texSizeY;
 	tilemap->spriteSizeX = texSizeX / sizeX;

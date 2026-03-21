@@ -32,7 +32,8 @@ static void render()
 	if(font == NULL)
 	{
 		font = loadFont("font.data", fontSizeX, fontSizeY, charSizeX, charSizeY);
-		content = openFile("test.txt");
+		int contentFile = openFile("test.txt", ASSETFILE);
+		content = getFileData(contentFile);
 	}
 	
 	ScePspFVector3 gridpos = {-100.0f, 70.0f, -100.0f};

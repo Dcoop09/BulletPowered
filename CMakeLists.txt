@@ -38,6 +38,7 @@ ${INC_PATH}/logger.c
 ${INC_PATH}/input.c
 ${INC_PATH}/file.c
 ${INC_PATH}/savefile.c
+#${INC_PATH}/audio.c
 
 ${SOURCE_PATH}/sandboxapp.c
 ${SOURCE_PATH}/cube.c

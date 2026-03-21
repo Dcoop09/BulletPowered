@@ -1,5 +1,9 @@
 #include <pspdebug.h>
+#include <pspkernel.h>
+#include <pspdisplay.h>
 #include <stdio.h>
+#include <callbacks.h>
+#include <input.h>
 
 #include "logger.h"
 
@@ -20,8 +24,17 @@ void printValue(float value)
 
 void throwError(const char *string, ...) 
 {
-	pspDebugScreenSetTextColor(0x0000FF);
-	printf("\x1b[31m");
-	printf(string);
-	printf("\x1b[0m\n");
+    pspDebugScreenInit();
+    pspDebugScreenClear();
+	pspDebugScreenSetXY(0, 0);
+	pspDebugScreenPrintf("%s\n",string);
+	pspDebugScreenPrintf("Press X to quit.\n");
+	while (running())
+	{
+		ctrlUpdate();
+		if (crossPressed)
+			break;
+		sceDisplayWaitVblankStart();
+	}
+	sceKernelExitGame();
 }

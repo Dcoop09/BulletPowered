@@ -1,0 +1,128 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/home/dcoop09/pspdev/psp/sdk/include",
+						"/home/dcoop09/pspdev/lib/gcc/psp/15.2.0/include",
+						"/home/dcoop09/pspdev/lib/gcc/psp/15.2.0/include-fixed",
+						"/home/dcoop09/pspdev/psp/include"
+					],
+					"linkDirectories" : 
+					[
+						"/home/dcoop09/pspdev/lib",
+						"/home/dcoop09/pspdev/psp/lib",
+						"/home/dcoop09/pspdev/psp/sdk/lib",
+						"/home/dcoop09/pspdev/lib/gcc/psp/15.2.0",
+						"/home/dcoop09/pspdev/lib/gcc"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"gcc",
+						"m",
+						"pthreadglue",
+						"pthread",
+						"cglue",
+						"c",
+						"psputility",
+						"psprtc",
+						"pspnet_inet",
+						"pspnet_resolver",
+						"pspsdk",
+						"pspmodinfo",
+						"pspuser",
+						"gcc"
+					]
+				},
+				"path" : "/home/dcoop09/pspdev/bin/psp-gcc",
+				"version" : "15.2.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/home/dcoop09/pspdev/psp/sdk/include",
+						"/home/dcoop09/pspdev/psp/include/c++/15.2.0",
+						"/home/dcoop09/pspdev/psp/include/c++/15.2.0/psp",
+						"/home/dcoop09/pspdev/psp/include/c++/15.2.0/backward",
+						"/home/dcoop09/pspdev/lib/gcc/psp/15.2.0/include",
+						"/home/dcoop09/pspdev/lib/gcc/psp/15.2.0/include-fixed",
+						"/home/dcoop09/pspdev/psp/include"
+					],
+					"linkDirectories" : 
+					[
+						"/home/dcoop09/pspdev/lib",
+						"/home/dcoop09/pspdev/psp/lib",
+						"/home/dcoop09/pspdev/psp/sdk/lib",
+						"/home/dcoop09/pspdev/lib/gcc/psp/15.2.0",
+						"/home/dcoop09/pspdev/lib/gcc"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++",
+						"m",
+						"gcc",
+						"m",
+						"pthreadglue",
+						"pthread",
+						"cglue",
+						"c",
+						"psputility",
+						"psprtc",
+						"pspnet_inet",
+						"pspnet_resolver",
+						"pspsdk",
+						"pspmodinfo",
+						"pspuser",
+						"gcc"
+					]
+				},
+				"path" : "/home/dcoop09/pspdev/bin/psp-g++",
+				"version" : "15.2.0"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm",
+				"ccm",
+				"cxxm",
+				"c++m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
