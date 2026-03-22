@@ -6,7 +6,7 @@
 #include "file.h"
 #include "logger.h"
 
-#define FILE_CHAR_LIMIT 20
+//#define FILE_CHAR_LIMIT 20
 
 //FILE CHAR LIMIT + the path size
 

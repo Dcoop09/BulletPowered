@@ -22,6 +22,8 @@ set(TEXTURE_END_PATH assets/textures/)
 
 set(AUDIO_END_PATH assets/mp3/)
 
+set(FILE_CHAR_LIMIT 20)
+
 configure_file(cmake_config.h.in ../cmake_config.h)
 
 include_directories(${INC_PATH})
